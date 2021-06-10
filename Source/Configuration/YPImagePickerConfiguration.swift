@@ -178,7 +178,10 @@ public struct YPImagePickerConfiguration {
 
 /// Encapsulates library specific settings.
 public struct YPConfigLibrary {
-    
+
+    /// Allow to deselect items with single tap. Default to false
+    public var singleTapToDeselect = false
+
     public var options: PHFetchOptions?
 
     /// Set this to true if you want to force the library output to be a squared image. Defaults to false.
